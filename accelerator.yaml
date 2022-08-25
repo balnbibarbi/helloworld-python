@@ -11,3 +11,14 @@ accelerator:
         text: STRAW
       defaultValue: vanilla
       required: true
+
+engine:
+  exclude:
+  - accelerator.yaml
+  merge:
+    - include: ["**/*"]
+      chain:
+        - type: ReplaceText
+          substitutions:
+            - text: "${iceCreamFlavour}"
+              with: "#iceCreamFlavour"
