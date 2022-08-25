@@ -1,0 +1,13 @@
+accelerator:
+  options:
+    - name: iceCreamFlavour
+      inputType: select
+      choices:
+      - value: vanilla
+        text: VAN
+      - value: chocolate
+        text: CHOCO
+      - value: strawberry
+        text: STRAW
+      defaultValue: vanilla
+      required: true
