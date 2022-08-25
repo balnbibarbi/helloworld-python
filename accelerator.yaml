@@ -1,0 +1,17 @@
+apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
+kind: Accelerator
+metadata:
+  name: helloworld-python-accelerator
+spec:
+  iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-cloud.png
+  displayName: Hello World Python App Accelerator
+  description: Accelerator that generates a simple Python Hello World knative serving application
+  tags:
+  - python
+  - cloud
+  - web
+  - tanzu
+  git:
+    url: https://github.com/balnbibarbi/helloworld-python
+    ref:
+      branch: main
