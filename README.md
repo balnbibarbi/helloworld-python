@@ -53,4 +53,4 @@ To do this:
 1. Log in to the Kubernetes cluster hosting Tanzu Application Platform, for example:<br />
    ``kubectl config use-context my-k8s-tap``
 1. Define the accelerator:<br />
-   ``kubectl apply -n tap-install -f tap-accelerator.yaml``
+   ``kubectl apply -n accelerator-system -f tap-accelerator.yaml``
