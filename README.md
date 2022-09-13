@@ -41,3 +41,16 @@ You can either have TAP do the entire CI/CD pipeline, or you can build a contain
 
 To remove the sample app from your cluster, execute:<br />
     ``make delete``
+
+## Adding custom accelerator
+
+You can add an accelerator to your deployment of Tanzu Application Platform that creates (optionally customised) instances of this application.
+To do this:
+1. Check out this git repository, for example:<br />
+   ``git clone https://github.com/balnbibarbi/helloworld-python.git``
+1. Enter the repository directory, for example:<br />
+   ``cd helloworld-python``
+1. Log in to the Kubernetes cluster hosting Tanzu Application Platform, for example:<br />
+   ``kubectl config use-context my-k8s-tap``
+1. Execute:<br />
+   ``kubectl apply -f tap-accelerator.yaml``
